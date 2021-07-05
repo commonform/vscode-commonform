@@ -24,9 +24,14 @@
     ]
   },
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "vscode:prepublish": "npm run -S esbuild-base -- --minify",
+    "esbuild-base": "esbuild ./extension.js --bundle --outfile=out/main.js --external:vscode --format=cjs --platform=node",
+    "esbuild": "npm run -S esbuild-base -- --sourcemap",
+    "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch"
   },
   "devDependencies": {
+    "esbuild": "^0.12.14",
     "standard": "^16.0.3"
   },
   "dependencies": {
