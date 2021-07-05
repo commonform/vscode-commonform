@@ -14,7 +14,7 @@
   "activationEvents": [
     "onCommand:vscode-commonform.docx"
   ],
-  "main": "./bundled.js",
+  "main": "bundled.js",
   "icon": "icon.png",
   "contributes": {
     "commands": [
