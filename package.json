@@ -2,7 +2,7 @@
   "publisher": "commonform",
   "name": "vscode-commonform",
   "displayName": "Common Form",
-  "description": "Common Form legal drafrting tools",
+  "description": "Common Form legal drafting tools",
   "version": "0.0.7",
   "repository": "commonform/vscode-commonform",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
