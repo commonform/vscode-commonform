@@ -4,6 +4,7 @@
   "displayName": "Common Form",
   "description": "Common Form legal drafrting tools",
   "version": "0.0.1",
+  "repository": "commonform/vscode-commonform",
   "engines": {
     "vscode": "^1.57.0"
   },
