@@ -15,6 +15,7 @@
     "onCommand:vscode-commonform.docx"
   ],
   "main": "./bundled.js",
+  "icon": "icon.png",
   "contributes": {
     "commands": [
       {
