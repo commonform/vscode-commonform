@@ -3,7 +3,7 @@
   "name": "vscode-commonform",
   "displayName": "Common Form",
   "description": "Common Form legal drafrting tools",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": "commonform/vscode-commonform",
   "author": "Kyle E. Mitchell <kyle@kemitchell.com> (https://kemitchell.com/)",
   "license": "BlueOak-1.0.0",
