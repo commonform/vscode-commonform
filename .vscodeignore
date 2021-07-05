@@ -2,3 +2,5 @@
 .gitignore
 node_modules
 extension.js
+jsconfig.json
+index.js
