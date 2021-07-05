@@ -1,6 +1,7 @@
 const fs = require('fs')
 const path = require('path')
 const vscode = require('vscode')
+const { exec } = require('child_process')
 
 const commonmark = require('commonform-commonmark')
 const docx = require('commonform-docx')
@@ -84,6 +85,7 @@ exports.activate = context => {
         const message = `Wrote ${outputPath}`
         console.log(message)
         outputChannel.append(message + '\n')
+        openFile(outputPath)
       })
 
     function fail (message) {
@@ -144,6 +146,7 @@ exports.activate = context => {
       const message = `Wrote ${outputPath}`
       console.log(message)
       outputChannel.append(message + '\n')
+      openFile(outputPath)
     })
 
     function fail (message) {
@@ -153,6 +156,17 @@ exports.activate = context => {
   })
 
   context.subscriptions.push(htmlCommand)
+}
+
+function openFile (path) {
+  const platform = process.platform
+  if (platform === 'darwin') {
+    exec(`open ${path}`)
+  } else if (platform === 'linux') {
+    exec(`xdg-open ${path}`)
+  } else {
+    exec(path)
+  }
 }
 
 exports.deactivate = () => {}
