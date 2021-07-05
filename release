@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+if [ -z "$1" ]; then
+  echo "Usage: <npm version argument>"
+  exit 1
+fi
+
+npm ci
+npm version "$1"
+git push --all
+vsce publish
