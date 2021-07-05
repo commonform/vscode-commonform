@@ -40,6 +40,7 @@ exports.activate = context => {
       hash: !!frontMatter.hash,
       leftAlignBody: Boolean(frontMatter.leftAlignBody),
       a4: Boolean(frontMatter.a4),
+      markFilled: Boolean(frontMatter.markFilled),
       smartify: frontMatter.smartify === undefined ? true : !!frontMatter.smartify,
       centerTitle: !!frontMatter.centerTitle,
       indentMargins: !!frontMatter.indentMargins,
