@@ -1,0 +1,38 @@
+{
+  "name": "vscode-commonform",
+  "displayName": "Common Form",
+  "description": "Common Form legal drafrting tools",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.57.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-commonform.docx"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-commonform.docx",
+        "title": "Convert Common Form to Microsoft Word .docx"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "standard"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3"
+  },
+  "dependencies": {
+    "commonform-commonmark": "^6.0.0",
+    "commonform-docx": "^5.5.2",
+    "commonform-prepare-blanks": "^1.0.2",
+    "decimal-numbering": "^3.0.2",
+    "ooxml-signature-pages": "^3.0.2",
+    "outline-numbering": "^2.0.0"
+  }
+}
