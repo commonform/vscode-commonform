@@ -14,7 +14,8 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:vscode-commonform.docx"
+    "onCommand:vscode-commonform.docx",
+    "onCommand:vscode-commonform.html"
   ],
   "main": "bundled.js",
   "icon": "icon.png",
@@ -23,6 +24,10 @@
       {
         "command": "vscode-commonform.docx",
         "title": "Convert Common Form to Microsoft Word .docx"
+      },
+      {
+        "command": "vscode-commonform.html",
+        "title": "Convert Common Form to HTML"
       }
     ]
   },
@@ -40,6 +45,7 @@
   "dependencies": {
     "commonform-commonmark": "^6.0.0",
     "commonform-docx": "^5.5.2",
+    "commonform-html": "^3.6.1",
     "commonform-prepare-blanks": "^1.0.2",
     "decimal-numbering": "^3.0.2",
     "ooxml-signature-pages": "^3.0.2",
