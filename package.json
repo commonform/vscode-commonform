@@ -26,7 +26,7 @@
   "scripts": {
     "lint": "standard",
     "vscode:prepublish": "npm run -S esbuild-base -- --minify",
-    "esbuild-base": "esbuild ./extension.js --bundle --outfile=bundled.js --external:vscode --format=cjs --platform=node",
+    "esbuild-base": "esbuild ./index.js --bundle --outfile=bundled.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run -S esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch"
   },
