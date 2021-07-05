@@ -17,7 +17,7 @@
     "onCommand:vscode-commonform.docx",
     "onCommand:vscode-commonform.html"
   ],
-  "main": "bundled.js",
+  "main": "index.bundled.js",
   "icon": "icon.png",
   "contributes": {
     "commands": [
@@ -34,7 +34,7 @@
   "scripts": {
     "lint": "standard",
     "vscode:prepublish": "npm run -S esbuild-base -- --minify",
-    "esbuild-base": "esbuild ./index.js --bundle --outfile=bundled.js --external:vscode --format=cjs --platform=node",
+    "esbuild-base": "esbuild ./index.js --bundle --outfile=index.bundled.js --external:vscode --format=cjs --platform=node",
     "esbuild": "npm run -S esbuild-base -- --sourcemap",
     "esbuild-watch": "npm run -S esbuild-base -- --sourcemap --watch"
   },
