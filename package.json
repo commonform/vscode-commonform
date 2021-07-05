@@ -1,4 +1,5 @@
 {
+  "publisher": "commonform",
   "name": "vscode-commonform",
   "displayName": "Common Form",
   "description": "Common Form legal drafrting tools",
